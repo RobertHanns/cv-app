@@ -22,7 +22,7 @@ export const TextContainer = styled.div`
   background-color: rgba(255, 0, 34, 0.1);
   border-radius: ${({ theme: { borderRadius } }) => borderRadius};
   margin-top: 100px;
-  width: 60%;
+  width: 70%;
   color: ${({ theme: { palette } }) => palette.common.white};
 `;
 
@@ -33,12 +33,13 @@ export const Header = styled.span`
 `;
 
 export const Text = styled.p`
+  margin-top: 10px;
   font-size: 2vw;
   word-wrap: break-word;
   max-width: 100%;
   text-align: center;
   margin: auto;
-  width: 60%;
+  width: 75%;
 `;
 
 export const Colour = styled.span`

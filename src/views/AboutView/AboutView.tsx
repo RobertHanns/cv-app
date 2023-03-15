@@ -1,5 +1,4 @@
 import { AppBar } from "../../components/AppBar/AppBar";
-import { Footer } from "../../components/Footer/Footer";
 import * as Styles from "./AboutView.styles";
 export const AboutView = () => {
   return (
