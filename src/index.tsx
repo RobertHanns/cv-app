@@ -3,15 +3,21 @@ import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import { Routes } from "./Routes";
+import { ThemeProvider } from "styled-components";
+import { defaultTheme } from "./Theme";
+import { GlobalStyle } from "./GlobalStyles";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Routes />
-    </BrowserRouter>
+    <GlobalStyle />
+    <ThemeProvider theme={defaultTheme}>
+      <BrowserRouter>
+        <Routes />
+      </BrowserRouter>
+    </ThemeProvider>
   </React.StrictMode>
 );
 
