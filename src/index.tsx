@@ -6,6 +6,7 @@ import { Routes } from "./Routes";
 import { ThemeProvider } from "styled-components";
 import { defaultTheme } from "./Theme";
 import { GlobalStyle } from "./GlobalStyles";
+import { AppBar } from "./components/AppBar/AppBar";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -15,6 +16,7 @@ root.render(
     <GlobalStyle />
     <ThemeProvider theme={defaultTheme}>
       <BrowserRouter>
+        <AppBar />
         <Routes />
       </BrowserRouter>
     </ThemeProvider>

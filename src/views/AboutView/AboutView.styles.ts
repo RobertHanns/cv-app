@@ -1,12 +1,4 @@
 import styled, { keyframes } from "styled-components";
-import Image from "../../images/background.png";
-
-export const Root = styled.div`
-  background-image: url(${Image});
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-`;
 
 export const Container = styled.div`
   width: 100%;
@@ -48,9 +40,15 @@ export const Colour = styled.span`
 `;
 
 const textclip = keyframes`
-  to {
-    background-position: 200% center;
-  }
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 `;
 
 export const AnimatedFont = styled.div`
@@ -70,7 +68,34 @@ export const AnimatedFont = styled.div`
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: ${textclip} 2s linear infinite;
+  animation: ${textclip} 6s ease infinite;
   display: inline-block;
   /* font-size: 7; */
+`;
+
+export const ButtonGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  justify-content: center;
+  align-content: center;
+  column-gap: 15px;
+  margin-top: 10px;
+`;
+
+interface ButtonProps {
+  primary?: boolean;
+}
+
+export const Button = styled.button<ButtonProps>`
+  padding: 10px;
+  font-size: 1vw;
+  color: ${({ theme: { palette } }) => palette.common.white};
+  border-radius: 20px;
+  background-color: transparent;
+  border: 2px solid;
+  border-color: ${({ primary, theme: { palette } }) =>
+    primary ? palette.primary.main : palette.common.white};
+  &:hover {
+    box-shadow: inset 0 0 0 10em rgba(255, 255, 255, 0.3);
+  }
 `;
