@@ -1,5 +1,5 @@
-import * as Styles from "./AboutView.styles";
-export const AboutView = () => {
+import * as Styles from "./About.styles";
+export const About = () => {
   return (
     <Styles.Container>
       <Styles.TextContainer>

@@ -1,5 +1,6 @@
 import { Navigate, Route, Routes as RouteSwitch } from "react-router-dom";
-import { AboutView } from "./views/AboutView/AboutView";
+import { About } from "./views/About";
+import { Skills } from "./views/Skills";
 export const Paths = {
   about: "/about",
   cv: "/cv",
@@ -9,8 +10,8 @@ export const Paths = {
 export const Routes = () => {
   return (
     <RouteSwitch>
-      <Route path={Paths.about} element={<AboutView />} />
-      <Route path={Paths.cv} element={<div>Cv</div>} />
+      <Route path={Paths.about} element={<About />} />
+      <Route path={Paths.cv} element={<Skills />} />
       <Route path={Paths.contact} element={<div>Contact</div>} />
       <Route path="*" element={<Navigate to={Paths.about} />} />
     </RouteSwitch>
