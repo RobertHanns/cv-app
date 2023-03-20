@@ -5,6 +5,7 @@ export const Root = styled.div`
   grid-template-columns: 1fr 1fr;
   @media (max-width: 700px) {
     grid-template-columns: 1fr;
+    row-gap: 10px;
   }
   margin: 15px;
   backdrop-filter: blur(3px);
@@ -21,6 +22,7 @@ export const Header = styled.span`
   color: ${({ theme: { palette } }) => palette.primary.main};
   font-weight: bold;
   font-size: 25px;
+  padding-bottom: 20px;
 `;
 
 export const Grow = (width: number) => keyframes`
@@ -82,6 +84,7 @@ export const TimeLineRoot = styled.div`
 `;
 
 export const Timeline = styled.div`
+  margin-top: 20px;
   width: 100%;
   max-width: 800px;
   background: transparent;

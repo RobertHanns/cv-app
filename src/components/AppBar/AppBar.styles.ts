@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Root = styled.div`
   background-color: hsla(0, 0%, 9%, 0.5);
-  height: 40px;
+  height: 5vh;
   width: 100%;
 `;
 

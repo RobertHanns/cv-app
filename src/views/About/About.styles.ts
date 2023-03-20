@@ -1,7 +1,21 @@
 import styled, { keyframes } from "styled-components";
+import Image from "../../images/background.png";
+export const Root = styled.div`
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  background-image: url(${Image});
+  background-size: cover;
+  background-repeat: no-repeat;
+`;
 
 export const Container = styled.div`
   width: 100%;
+  height: 40%;
   display: flex;
   justify-content: center;
 `;
@@ -10,10 +24,9 @@ export const TextContainer = styled.div`
   display: grid;
   grid-template-rows: auto;
   backdrop-filter: blur(3px);
-  padding: 15px;
+  padding: 10px;
   background-color: rgba(31, 41, 55, 0.6);
   border-radius: ${({ theme: { borderRadius } }) => borderRadius};
-  margin-top: 100px;
   width: 70%;
   color: ${({ theme: { palette } }) => palette.common.white};
 `;
@@ -25,7 +38,7 @@ export const Header = styled.span`
 `;
 
 export const Text = styled.p`
-  margin-top: 10px;
+  /* margin-top: 10px; */
   font-size: 25px;
   word-wrap: break-word;
   max-width: 100%;
