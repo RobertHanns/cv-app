@@ -4,9 +4,8 @@ import * as Styles from "./Skills.styles";
 export const Skills = () => {
   return (
     <Styles.Root>
-      <Styles.Header>Skills</Styles.Header>
-      <Styles.Header>Experience</Styles.Header>
       <div>
+        <Styles.Header>Skills</Styles.Header>
         {skillsData.map(({ name, skill }) => {
           return (
             <Styles.SkillConatainer key={name}>
@@ -19,6 +18,7 @@ export const Skills = () => {
         })}
       </div>
       <Styles.TimeLineRoot>
+        <Styles.Header>Experience</Styles.Header>
         <Styles.Timeline>
           <Styles.TimeLinePoint>
             <Styles.TimelineTitleRoot>

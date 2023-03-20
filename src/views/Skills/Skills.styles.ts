@@ -3,6 +3,9 @@ import styled, { keyframes } from "styled-components";
 export const Root = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr;
+  }
   margin: 15px;
   backdrop-filter: blur(3px);
   padding: 15px;
@@ -10,6 +13,8 @@ export const Root = styled.div`
   border-radius: ${({ theme: { borderRadius } }) => borderRadius};
   margin-top: 50px;
   gap: 10px;
+  overflow-y: auto;
+  word-break: break-word;
 `;
 
 export const Header = styled.span`
