@@ -1,6 +1,7 @@
 import { Navigate, Route, Routes as RouteSwitch } from "react-router-dom";
 import { About } from "./views/About";
-import { Skills } from "./views/Skills";
+import { Skills } from "./views/Skills/Skills";
+
 export const Paths = {
   about: "/about",
   cv: "/cv",

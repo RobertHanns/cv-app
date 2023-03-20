@@ -11,7 +11,7 @@ export const TextContainer = styled.div`
   grid-template-rows: auto;
   backdrop-filter: blur(3px);
   padding: 15px;
-  background-color: rgba(255, 0, 34, 0.1);
+  background-color: rgba(31, 41, 55, 0.6);
   border-radius: ${({ theme: { borderRadius } }) => borderRadius};
   margin-top: 100px;
   width: 70%;
@@ -19,14 +19,14 @@ export const TextContainer = styled.div`
 `;
 
 export const Header = styled.span`
-  font-size: 5vw;
+  font-size: 65px;
   font-weight: bold;
   text-align: center;
 `;
 
 export const Text = styled.p`
   margin-top: 10px;
-  font-size: 2vw;
+  font-size: 25px;
   word-wrap: break-word;
   max-width: 100%;
   text-align: center;
@@ -88,7 +88,7 @@ interface ButtonProps {
 
 export const Button = styled.button<ButtonProps>`
   padding: 10px;
-  font-size: 1vw;
+  font-size: 20px;
   color: ${({ theme: { palette } }) => palette.common.white};
   border-radius: 20px;
   background-color: transparent;
