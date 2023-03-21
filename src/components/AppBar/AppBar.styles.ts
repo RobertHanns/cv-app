@@ -1,9 +1,13 @@
 import styled from "styled-components";
 
 export const Root = styled.div`
-  background-color: hsla(0, 0%, 9%, 0.5);
+  background-color: hsla(0, 0%, 9%, 0.9);
   height: 5vh;
   width: 100%;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 99;
 `;
 
 export const NavigationGrid = styled.div`

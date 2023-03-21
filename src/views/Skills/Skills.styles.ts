@@ -19,7 +19,7 @@ export const Root = styled.div`
 `;
 
 export const Header = styled.span`
-  color: ${({ theme: { palette } }) => palette.primary.main};
+  color: ${({ theme: { palette } }) => palette.common.white};
   font-weight: bold;
   font-size: 25px;
   padding-bottom: 20px;
@@ -72,11 +72,9 @@ const gutter = "30px";
 
 export const TimeLineRoot = styled.div`
   justify-content: center;
-  /* min-height: 100vh; */
   width: 100%;
   margin: 0;
   font-weight: 300;
-  /* color: #333; */
   box-sizing: border-box;
   * {
     box-sizing: border-box;
@@ -128,7 +126,6 @@ export const TimelineTitleRoot = styled.span`
     border-radius: 100%;
     top: 15%;
     right: -25px;
-    z-index: 99;
   }
 `;
 

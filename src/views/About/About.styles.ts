@@ -15,7 +15,6 @@ export const Root = styled.div`
 
 export const Container = styled.div`
   width: 100%;
-  /* height: 1000%; */
   display: grid;
   grid-template-columns: 1fr;
   align-content: center;
@@ -26,7 +25,6 @@ export const Container = styled.div`
 
 export const TextContainer = styled.div`
   display: grid;
-  /* grid-template-columns: 1fr; */
   grid-template-rows: auto;
   backdrop-filter: blur(3px);
   padding: 10px;
