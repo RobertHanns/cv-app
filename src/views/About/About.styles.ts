@@ -15,13 +15,18 @@ export const Root = styled.div`
 
 export const Container = styled.div`
   width: 100%;
-  height: 40%;
-  display: flex;
+  /* height: 1000%; */
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
   justify-content: center;
 `;
 
 export const TextContainer = styled.div`
   display: grid;
+  /* grid-template-columns: 1fr; */
   grid-template-rows: auto;
   backdrop-filter: blur(3px);
   padding: 10px;
@@ -33,13 +38,18 @@ export const TextContainer = styled.div`
 
 export const Header = styled.span`
   font-size: 65px;
+  @media (max-width: 700px) {
+    font-size: 50px;
+  }
   font-weight: bold;
   text-align: center;
 `;
 
 export const Text = styled.p`
-  /* margin-top: 10px; */
   font-size: 25px;
+  @media (max-width: 700px) {
+    font-size: 15px;
+  }
   word-wrap: break-word;
   max-width: 100%;
   text-align: center;
@@ -65,7 +75,6 @@ const textclip = keyframes`
 `;
 
 export const AnimatedFont = styled.div`
-  /* text-transform: uppercase; */
   background-image: linear-gradient(
     -225deg,
     #fefe6e 0%,
@@ -83,7 +92,6 @@ export const AnimatedFont = styled.div`
   -webkit-text-fill-color: transparent;
   animation: ${textclip} 6s ease infinite;
   display: inline-block;
-  /* font-size: 7; */
 `;
 
 export const ButtonGrid = styled.div`
@@ -100,8 +108,11 @@ interface ButtonProps {
 }
 
 export const Button = styled.button<ButtonProps>`
-  padding: 10px;
-  font-size: 20px;
+  padding: 5px;
+  font-size: 25px;
+  @media (max-width: 700px) {
+    font-size: 15px;
+  }
   color: ${({ theme: { palette } }) => palette.common.white};
   border-radius: 20px;
   background-color: transparent;
