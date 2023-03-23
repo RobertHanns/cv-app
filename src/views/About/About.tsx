@@ -11,35 +11,33 @@ export const About = () => {
   }, [navigate]);
   return (
     <Styles.Root>
-      <Styles.Container>
-        <Styles.TextContainer>
-          <Styles.Header>
-            Hi<Styles.Colour>,</Styles.Colour> I'm{" "}
-            <Styles.AnimatedFont>Rob.</Styles.AnimatedFont>
-          </Styles.Header>
-          <Styles.Text>
-            I am a <Styles.Colour>London</Styles.Colour> based&nbsp;
-            <Styles.Colour>Full stack software engineer</Styles.Colour>.&nbsp;I
-            am currently working in the public sector helping to build&nbsp;
-            <Styles.Colour>modern, user focused, type-safe&nbsp;</Styles.Colour>
-            React applications.
-          </Styles.Text>
-          <Styles.LogoContainer>
-            <Styles.Link href="mailto:robert_hanns@hotmail.com?subject=Contact from website">
-              <MdMailOutline />
-            </Styles.Link>
+      <Styles.TextContainer>
+        <Styles.Header>
+          Hi<Styles.Colour>,</Styles.Colour> I'm&nbsp;
+          <Styles.AnimatedFont>Rob.</Styles.AnimatedFont>
+        </Styles.Header>
+        <Styles.Text>
+          I am a <Styles.Colour>London</Styles.Colour> based&nbsp;
+          <Styles.Colour>Full stack software engineer</Styles.Colour>.&nbsp;I am
+          currently working in the public sector helping to build&nbsp;
+          <Styles.Colour>modern, user focused, type-safe&nbsp;</Styles.Colour>
+          React applications.
+        </Styles.Text>
+        <Styles.LogoContainer>
+          <Styles.Link href="mailto:robert_hanns@hotmail.com?subject=Contact from website">
+            <MdMailOutline />
+          </Styles.Link>
 
-            <Styles.Link href="https://github.com/RobertHanns">
-              <AiOutlineGithub />
-            </Styles.Link>
-          </Styles.LogoContainer>
-          <Styles.ButtonGrid>
-            <Styles.Button primary onClick={handleSkillsClick}>
-              Skills
-            </Styles.Button>
-          </Styles.ButtonGrid>
-        </Styles.TextContainer>
-      </Styles.Container>
+          <Styles.Link href="https://github.com/RobertHanns">
+            <AiOutlineGithub />
+          </Styles.Link>
+        </Styles.LogoContainer>
+        <Styles.ButtonGrid>
+          <Styles.Button primary onClick={handleSkillsClick}>
+            Skills
+          </Styles.Button>
+        </Styles.ButtonGrid>
+      </Styles.TextContainer>
     </Styles.Root>
   );
 };

@@ -14,17 +14,6 @@ export const Root = styled.div`
   background-repeat: no-repeat;
 `;
 
-export const Container = styled.div`
-  width: 100%;
-  padding: 25px;
-  display: grid;
-  grid-template-columns: 1fr;
-  align-content: center;
-  align-items: center;
-  justify-items: center;
-  justify-content: center;
-`;
-
 export const TextContainer = styled.div`
   display: grid;
   grid-template-rows: auto;
