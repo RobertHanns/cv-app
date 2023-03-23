@@ -21,7 +21,7 @@ export const TextContainer = styled.div`
   padding: 10px;
   background-color: rgba(31, 41, 55, 0.6);
   border-radius: ${({ theme: { borderRadius } }) => borderRadius};
-  width: 60%;
+  width: 65%;
   row-gap: 10px;
   @media (max-width: 700px) {
     width: 90%;
@@ -92,7 +92,7 @@ export const ButtonGrid = styled.div`
   grid-template-columns: repeat(2, min-content);
   justify-content: center;
   align-content: center;
-  column-gap: 15px;
+  column-gap: 10px;
   margin-top: 10px;
 `;
 
@@ -101,13 +101,15 @@ interface ButtonProps {
 }
 
 export const Button = styled.button<ButtonProps>`
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
   padding: 10px;
   font-size: 20px;
   @media (max-width: 700px) {
     font-size: 15px;
   }
   color: ${({ theme: { palette } }) => palette.common.white};
-  border-radius: 12px;
+  border-radius: 20px;
   background-color: transparent;
   border: 2px solid;
   border-color: ${({ primary, theme: { palette } }) =>
@@ -115,6 +117,10 @@ export const Button = styled.button<ButtonProps>`
   &:hover {
     box-shadow: inset 0 0 0 10em rgba(255, 255, 255, 0.3);
   }
+`;
+
+export const FileLink = styled.a`
+  text-decoration: none;
 `;
 
 export const LogoContainer = styled.div`

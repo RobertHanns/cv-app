@@ -33,12 +33,15 @@ export const Skills = () => {
                 <Styles.TimelineBodyListItem>
                   Lead development on a greenfield project to&nbsp;
                   <Styles.HighlightText>
-                    query, visulase and interogate large datasets
+                    query, visualise and interrogate large datasets.
                   </Styles.HighlightText>
                   .
                 </Styles.TimelineBodyListItem>
                 <Styles.TimelineBodyListItem>
-                  Developemnt followed the agile principles.
+                  Implemented agile methodologies for development.
+                </Styles.TimelineBodyListItem>
+                <Styles.TimelineBodyListItem>
+                  Ensured code standards were enforced.
                 </Styles.TimelineBodyListItem>
                 <Styles.TimelineBodyListItem>
                   Built with&nbsp;
@@ -51,7 +54,6 @@ export const Skills = () => {
                   <Styles.HighlightText>AWS</Styles.HighlightText>,&nbsp;
                   <Styles.HighlightText>K8s</Styles.HighlightText>.
                 </Styles.TimelineBodyListItem>
-
                 <Styles.TimelineBodyListItem>
                   multiple iterations developed and continuosly deployed
                   via&nbsp;
@@ -76,8 +78,8 @@ export const Skills = () => {
                   projects focused around data processing and data science
                 </Styles.TimelineBodyListItem>
                 <Styles.TimelineBodyListItem>
-                  Buit components and worksflows for an automated processing
-                  pipleing in&nbsp;
+                  Built components and workflows for an automated processing
+                  pipeline in&nbsp;
                   <Styles.HighlightText>C# (.net)</Styles.HighlightText>.
                 </Styles.TimelineBodyListItem>
                 <Styles.TimelineBodyListItem>
@@ -121,7 +123,7 @@ export const Skills = () => {
                   &nbsp;front end for an established record system.
                 </Styles.TimelineBodyListItem>
                 <Styles.TimelineBodyListItem>
-                  Learned agile principles and methodolgy.
+                  Learned agile principles and methodology.
                 </Styles.TimelineBodyListItem>
               </Styles.TimelineBodyList>
             </Styles.TimelineBodyRoot>
