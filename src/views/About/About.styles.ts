@@ -1,9 +1,10 @@
 import styled, { keyframes } from "styled-components";
 import Image from "../../images/background.png";
 export const Root = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
   width: 100%;
-  height: 95vh;
-  display: flex;
+  height: 95%;
   justify-content: center;
   justify-items: center;
   align-content: center;
@@ -15,6 +16,7 @@ export const Root = styled.div`
 
 export const Container = styled.div`
   width: 100%;
+  padding: 25px;
   display: grid;
   grid-template-columns: 1fr;
   align-content: center;
@@ -30,7 +32,11 @@ export const TextContainer = styled.div`
   padding: 10px;
   background-color: rgba(31, 41, 55, 0.6);
   border-radius: ${({ theme: { borderRadius } }) => borderRadius};
-  width: 70%;
+  width: 60%;
+  row-gap: 10px;
+  @media (max-width: 700px) {
+    width: 90%;
+  }
   color: ${({ theme: { palette } }) => palette.common.white};
 `;
 
@@ -106,18 +112,38 @@ interface ButtonProps {
 }
 
 export const Button = styled.button<ButtonProps>`
-  padding: 5px;
-  font-size: 25px;
+  padding: 10px;
+  font-size: 20px;
   @media (max-width: 700px) {
     font-size: 15px;
   }
   color: ${({ theme: { palette } }) => palette.common.white};
-  border-radius: 20px;
+  border-radius: 12px;
   background-color: transparent;
   border: 2px solid;
   border-color: ${({ primary, theme: { palette } }) =>
     primary ? palette.primary.main : palette.common.white};
   &:hover {
     box-shadow: inset 0 0 0 10em rgba(255, 255, 255, 0.3);
+  }
+`;
+
+export const LogoContainer = styled.div`
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, min-content);
+  column-gap: 10px;
+  justify-content: center;
+  align-content: center;
+  font-size: 40px;
+`;
+
+export const Link = styled.a`
+  transition: all 0.2s ease-out;
+  color: ${({ theme: { palette } }) => palette.common.white};
+  &:hover {
+    color: ${({ theme: { palette } }) => palette.primary.main};
+    opacity: 1;
+    transition: all 0.2s ease-in;
   }
 `;
