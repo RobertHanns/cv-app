@@ -18,7 +18,7 @@ export const TextContainer = styled.div`
   display: grid;
   grid-template-rows: auto;
   backdrop-filter: blur(3px);
-  padding: 10px;
+  padding: 15px;
   background-color: rgba(31, 41, 55, 0.6);
   border-radius: ${({ theme: { borderRadius } }) => borderRadius};
   width: 65%;
@@ -55,7 +55,7 @@ export const Colour = styled.span`
   color: ${({ theme: { palette } }) => palette.primary.main};
 `;
 
-const textclip = keyframes`
+const textClip = keyframes`
 	0% {
 		background-position: 0% 50%;
 	}
@@ -83,13 +83,13 @@ export const AnimatedFont = styled.div`
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: ${textclip} 6s ease infinite;
+  animation: ${textClip} 6s ease infinite;
   display: inline-block;
 `;
 
 export const ButtonGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, min-content);
+  grid-template-columns: repeat(2, max-content);
   justify-content: center;
   align-content: center;
   column-gap: 10px;
@@ -103,13 +103,13 @@ interface ButtonProps {
 export const Button = styled.button<ButtonProps>`
   display: grid;
   grid-template-columns: repeat(2, min-content);
-  padding: 10px;
+  padding: 8px;
   font-size: 20px;
   @media (max-width: 700px) {
     font-size: 15px;
   }
   color: ${({ theme: { palette } }) => palette.common.white};
-  border-radius: 20px;
+  border-radius: 8px;
   background-color: transparent;
   border: 2px solid;
   border-color: ${({ primary, theme: { palette } }) =>
@@ -126,7 +126,7 @@ export const FileLink = styled.a`
 export const LogoContainer = styled.div`
   margin-top: 10px;
   display: grid;
-  grid-template-columns: repeat(2, min-content);
+  grid-template-columns: repeat(2, max-content);
   column-gap: 10px;
   justify-content: center;
   align-content: center;
