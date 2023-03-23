@@ -92,7 +92,7 @@ export const ButtonGrid = styled.div`
   grid-template-columns: repeat(2, max-content);
   justify-content: center;
   align-content: center;
-  column-gap: 10px;
+  column-gap: 5px;
   margin-top: 10px;
 `;
 
@@ -127,7 +127,7 @@ export const LogoContainer = styled.div`
   margin-top: 10px;
   display: grid;
   grid-template-columns: repeat(2, max-content);
-  column-gap: 10px;
+  column-gap: 5px;
   justify-content: center;
   align-content: center;
   font-size: 40px;
