@@ -126,7 +126,7 @@ export const FileLink = styled.a`
 export const LogoContainer = styled.div`
   margin-top: 10px;
   display: grid;
-  grid-template-columns: repeat(4, min-content);
+  grid-template-columns: repeat(2, min-content);
   column-gap: 10px;
   justify-content: center;
   align-content: center;

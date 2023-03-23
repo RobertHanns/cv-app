@@ -34,10 +34,7 @@ export const About = () => {
           </Styles.Link>
         </Styles.LogoContainer>
         <Styles.ButtonGrid>
-          <Styles.FileLink
-            href="./files/Robert-cv.pdf"
-            download="Robert-cv.pdf"
-          >
+          <Styles.FileLink href="./Robert-cv.pdf" download="Robert-cv.pdf">
             <Styles.Button primary>
               Resume <MdOutlineFileDownload />
             </Styles.Button>
