@@ -5,7 +5,6 @@ import { Skills } from "./views/Skills/Skills";
 export const Paths = {
   about: "/about",
   cv: "/cv",
-  contact: "/contact",
 };
 
 export const Routes = () => {
@@ -13,7 +12,6 @@ export const Routes = () => {
     <RouteSwitch>
       <Route path={Paths.about} element={<About />} />
       <Route path={Paths.cv} element={<Skills />} />
-      <Route path={Paths.contact} element={<div>Contact</div>} />
       <Route path="*" element={<Navigate to={Paths.about} />} />
     </RouteSwitch>
   );

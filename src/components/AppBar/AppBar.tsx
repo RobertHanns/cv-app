@@ -29,12 +29,6 @@ export const AppBar = () => {
         >
           Skills
         </Styles.NavigationButton>
-        <Styles.NavigationButton
-          selected={pathname === Paths.contact}
-          onClick={handleNavigateClick(Paths.contact)}
-        >
-          Contact
-        </Styles.NavigationButton>
       </Styles.NavigationGrid>
     </Styles.Root>
   );

@@ -2,6 +2,8 @@ import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import { Paths } from "../../Routes";
 import * as Styles from "./About.styles";
+import { MdMailOutline } from "react-icons/md";
+import { AiOutlineGithub } from "react-icons/ai";
 export const About = () => {
   const navigate = useNavigate();
   const handleSkillsClick = useCallback(() => {
@@ -22,11 +24,19 @@ export const About = () => {
             <Styles.Colour>modern, user focused, type-safe&nbsp;</Styles.Colour>
             React applications.
           </Styles.Text>
+          <Styles.LogoContainer>
+            <Styles.Link href="mailto:robert_hanns@hotmail.com?subject=Contact from website">
+              <MdMailOutline />
+            </Styles.Link>
+
+            <Styles.Link href="https://github.com/RobertHanns">
+              <AiOutlineGithub />
+            </Styles.Link>
+          </Styles.LogoContainer>
           <Styles.ButtonGrid>
             <Styles.Button primary onClick={handleSkillsClick}>
               Skills
             </Styles.Button>
-            <Styles.Button>Contact</Styles.Button>
           </Styles.ButtonGrid>
         </Styles.TextContainer>
       </Styles.Container>

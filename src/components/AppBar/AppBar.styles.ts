@@ -2,18 +2,16 @@ import styled from "styled-components";
 
 export const Root = styled.div`
   background-color: hsla(0, 0%, 9%, 0.9);
-  height: 5vh;
+  height: 5%;
+  align-items: center;
   width: 100%;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
-  z-index: 99;
 `;
 
 export const NavigationGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(3, max-content);
   align-items: center;
+  align-content: center;
   justify-content: center;
   text-align: center;
   column-gap: 15px;

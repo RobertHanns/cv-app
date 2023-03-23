@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-import Image from "./images/background.png";
 
 export const GlobalStyle = createGlobalStyle`
 body {
@@ -9,8 +8,10 @@ body {
     background-color: rgba(31, 41, 55, 1.5);
     height: 100vh;
 }
-button {
+button,a {
     cursor: pointer;
 }
-
+#root {
+    height: 100%;
+}
 `;
