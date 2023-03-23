@@ -95,7 +95,7 @@ export const TimeLineRoot = styled.div`
   margin: 0;
   font-weight: 300;
   margin: 10px;
-
+  height: 95%;
   box-sizing: border-box;
   * {
     box-sizing: border-box;
@@ -104,14 +104,12 @@ export const TimeLineRoot = styled.div`
 
 export const Timeline = styled.div`
   animation: ${GrowHorizontal} 1.5s forwards;
-  /* animation: ${fade} 1.5s forwards; */
   margin-top: 20px;
   width: 100%;
   max-width: 800px;
   background: transparent;
   position: relative;
   box-shadow: ${containerShadow};
-
   &:before {
     content: "";
     position: absolute;
@@ -165,8 +163,6 @@ export const TimelineText = styled.p`
   font-weight: bold;
   color: ${({ theme: { palette } }) => palette.common.white};
 `;
-
-//body
 
 export const TimelineBodyRoot = styled.div`
   margin: 0 0 3em;

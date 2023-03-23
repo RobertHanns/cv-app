@@ -13,12 +13,12 @@ export const Root = styled.div`
 
 export const NavigationGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, max-content);
+  grid-template-columns: repeat(2, max-content);
   align-items: center;
   align-content: center;
   justify-content: center;
   text-align: center;
-  column-gap: 15px;
+  column-gap: 10px;
 `;
 
 interface NavigationButtonProps {

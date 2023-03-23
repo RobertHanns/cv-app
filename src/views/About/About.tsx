@@ -1,9 +1,11 @@
 import { useCallback } from "react";
-import { useNavigate } from "react-router-dom";
-import { Paths } from "../../Routes";
-import * as Styles from "./About.styles";
-import { MdMailOutline } from "react-icons/md";
+import { MdMailOutline, MdOutlineFileDownload } from "react-icons/md";
 import { AiOutlineGithub } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
+
+import * as Styles from "./About.styles";
+import { Paths } from "../../Routes";
+
 export const About = () => {
   const navigate = useNavigate();
   const handleSkillsClick = useCallback(() => {
@@ -27,15 +29,20 @@ export const About = () => {
           <Styles.Link href="mailto:robert_hanns@hotmail.com?subject=Contact from website">
             <MdMailOutline />
           </Styles.Link>
-
           <Styles.Link href="https://github.com/RobertHanns">
             <AiOutlineGithub />
           </Styles.Link>
         </Styles.LogoContainer>
         <Styles.ButtonGrid>
-          <Styles.Button primary onClick={handleSkillsClick}>
-            Skills
-          </Styles.Button>
+          <Styles.FileLink
+            href="./files/Robert-cv.pdf"
+            download="Robert-cv.pdf"
+          >
+            <Styles.Button primary>
+              Resume <MdOutlineFileDownload />
+            </Styles.Button>
+          </Styles.FileLink>
+          <Styles.Button onClick={handleSkillsClick}>Skills</Styles.Button>
         </Styles.ButtonGrid>
       </Styles.TextContainer>
     </Styles.Root>
