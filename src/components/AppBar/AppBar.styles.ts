@@ -5,6 +5,10 @@ export const Root = styled.div`
   height: 5%;
   align-items: center;
   width: 100%;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 99;
 `;
 
 export const NavigationGrid = styled.div`

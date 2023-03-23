@@ -14,7 +14,6 @@ export const Root = styled.div`
   border-radius: ${({ theme: { borderRadius } }) => borderRadius};
   margin-top: 50px;
   gap: 10px;
-  overflow-y: auto;
   word-break: break-word;
 `;
 
@@ -25,12 +24,20 @@ export const Header = styled.span`
   padding-bottom: 20px;
 `;
 
-export const Grow = (width: number) => keyframes`
+export const GrowVerticle = (width: number) => keyframes`
   0% {
     width: 0;
   }
   100% {
     width: ${width}%;
+  }
+`;
+export const fade = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 `;
 
@@ -41,6 +48,7 @@ export const SkillConatainer = styled.div`
   width: 100%;
   gap: 10px;
   padding: 10px;
+  animation: ${fade} 1.5s forwards;
 `;
 export const SkillLabel = styled.div`
   color: ${({ theme: { palette } }) => palette.common.white};
@@ -62,7 +70,7 @@ export const SkillBarColour = styled.div<SkillBarColourProps>`
   width: ${({ width }) => width};
   height: 15px;
   border-radius: 15px;
-  animation: ${(props) => Grow(props.width)} 1.5s forwards;
+  animation: ${(props) => GrowVerticle(props.width)} 1.5s forwards;
 `;
 // timeline
 const containerShadow = "0.5rem 0.5rem 2rem 0 rgba(black, 0.2)";
@@ -70,11 +78,24 @@ const borderWidth = "4px";
 const dotDiameter = "8px";
 const gutter = "30px";
 
+export const GrowHorizontal = keyframes`
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  100% {
+    height: 100%;
+    opacity: 1;
+  }
+`;
+
 export const TimeLineRoot = styled.div`
   justify-content: center;
   width: 100%;
   margin: 0;
   font-weight: 300;
+  margin: 10px;
+
   box-sizing: border-box;
   * {
     box-sizing: border-box;
@@ -82,12 +103,15 @@ export const TimeLineRoot = styled.div`
 `;
 
 export const Timeline = styled.div`
+  animation: ${GrowHorizontal} 1.5s forwards;
+  /* animation: ${fade} 1.5s forwards; */
   margin-top: 20px;
   width: 100%;
   max-width: 800px;
   background: transparent;
   position: relative;
   box-shadow: ${containerShadow};
+
   &:before {
     content: "";
     position: absolute;
@@ -132,13 +156,13 @@ export const TimelineTitleRoot = styled.span`
 export const TimelineTitle = styled.h3`
   margin: 0;
   font-size: 120%;
-
   color: ${({ theme: { palette } }) => palette.primary.main};
 `;
 
 export const TimelineText = styled.p`
   margin: 0;
   font-size: 100%;
+  font-weight: bold;
   color: ${({ theme: { palette } }) => palette.common.white};
 `;
 
@@ -169,6 +193,7 @@ export const TimelineBodyListItem = styled.li`
     content: "–";
     margin-right: 0.5em;
   }
+  margin-bottom: 5px;
 `;
 
 export const HighlightText = styled.span`

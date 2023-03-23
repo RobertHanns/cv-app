@@ -8,16 +8,20 @@ export const skillsData = [
     skill: 80,
   },
   {
+    name: "Css",
+    skill: 70,
+  },
+  {
+    name: "AWS",
+    skill: 75,
+  },
+  {
     name: "Terraform",
     skill: 70,
   },
   {
     name: "Kubernetes",
     skill: 50,
-  },
-  {
-    name: "AWS",
-    skill: 70,
   },
   {
     name: "Git",
