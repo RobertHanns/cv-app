@@ -36,7 +36,7 @@ export const About = () => {
         <Styles.ButtonGrid>
           <Styles.FileLink href="./Robert-cv.pdf" download="Robert-cv.pdf">
             <Styles.Button primary>
-              Resume <MdOutlineFileDownload />
+              CV <MdOutlineFileDownload />
             </Styles.Button>
           </Styles.FileLink>
           <Styles.Button onClick={handleSkillsClick}>Skills</Styles.Button>
