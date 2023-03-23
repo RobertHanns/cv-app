@@ -18,7 +18,7 @@ export const NavigationGrid = styled.div`
   align-content: center;
   justify-content: center;
   text-align: center;
-  column-gap: 10px;
+  column-gap: 5px;
 `;
 
 interface NavigationButtonProps {
