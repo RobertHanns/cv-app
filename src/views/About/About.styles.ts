@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import Image from "../../images/background.png";
+import Image from "../../images/background.jpeg";
 export const Root = styled.div`
   display: grid;
   grid-template-columns: 1fr;
