@@ -24,7 +24,7 @@ export const Header = styled.span`
   padding-bottom: 20px;
 `;
 
-export const GrowVerticle = (width: number) => keyframes`
+export const growVertical = (width: number) => keyframes`
   0% {
     width: 0;
   }
@@ -41,7 +41,7 @@ export const fade = keyframes`
   }
 `;
 
-export const SkillConatainer = styled.div`
+export const SkillContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-row: repeat(2, 1fr);
@@ -70,7 +70,7 @@ export const SkillBarColour = styled.div<SkillBarColourProps>`
   width: ${({ width }) => width};
   height: 15px;
   border-radius: 15px;
-  animation: ${(props) => GrowVerticle(props.width)} 1.5s forwards;
+  animation: ${(props) => growVertical(props.width)} 1.5s forwards;
 `;
 // timeline
 const containerShadow = "0.5rem 0.5rem 2rem 0 rgba(black, 0.2)";

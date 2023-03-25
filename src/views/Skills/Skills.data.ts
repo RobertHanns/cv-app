@@ -8,7 +8,7 @@ export const skillsData = [
     skill: 80,
   },
   {
-    name: "Css",
+    name: "CSS",
     skill: 70,
   },
   {

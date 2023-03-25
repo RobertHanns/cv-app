@@ -8,12 +8,12 @@ export const Skills = () => {
         <Styles.Header>Skills 💡</Styles.Header>
         {skillsData.map(({ name, skill }) => {
           return (
-            <Styles.SkillConatainer key={name}>
+            <Styles.SkillContainer key={name}>
               <Styles.SkillLabel>{name}</Styles.SkillLabel>
               <Styles.SkillBar>
                 <Styles.SkillBarColour width={skill} />
               </Styles.SkillBar>
-            </Styles.SkillConatainer>
+            </Styles.SkillContainer>
           );
         })}
       </div>
@@ -33,7 +33,7 @@ export const Skills = () => {
                 <Styles.TimelineBodyListItem>
                   Lead development on a greenfield project to&nbsp;
                   <Styles.HighlightText>
-                    query, visualise and interrogate large datasets.
+                    query, visualise and interrogate large datasets
                   </Styles.HighlightText>
                   .
                 </Styles.TimelineBodyListItem>
@@ -55,9 +55,9 @@ export const Skills = () => {
                   <Styles.HighlightText>K8s</Styles.HighlightText>.
                 </Styles.TimelineBodyListItem>
                 <Styles.TimelineBodyListItem>
-                  multiple iterations developed and continuosly deployed
+                  multiple iterations developed and continuously deployed
                   via&nbsp;
-                  <Styles.HighlightText>Gitlab CICD</Styles.HighlightText>
+                  <Styles.HighlightText>Gitlab CICD</Styles.HighlightText>.
                 </Styles.TimelineBodyListItem>
               </Styles.TimelineBodyList>
             </Styles.TimelineBodyRoot>
@@ -75,7 +75,10 @@ export const Skills = () => {
               <Styles.TimelineBodyList>
                 <Styles.TimelineBodyListItem>
                   Joined on a two year graduate programme, working on two
-                  projects focused around data processing and data science
+                  projects focused around&nbsp;
+                  <Styles.HighlightText>data processing</Styles.HighlightText>
+                  &nbsp; and{" "}
+                  <Styles.HighlightText>data science</Styles.HighlightText>.
                 </Styles.TimelineBodyListItem>
                 <Styles.TimelineBodyListItem>
                   Built components and workflows for an automated processing
@@ -142,11 +145,7 @@ export const Skills = () => {
               </Styles.TimelineBodyText>
               <Styles.TimelineBodyList>
                 <Styles.TimelineBodyListItem>
-                  Graduated with frist class honours.
-                </Styles.TimelineBodyListItem>
-                <Styles.TimelineBodyListItem>
-                  Studied a mix of managment modules and commputer science
-                  modules.
+                  Graduated with first class honours.
                 </Styles.TimelineBodyListItem>
               </Styles.TimelineBodyList>
             </Styles.TimelineBodyRoot>
@@ -154,7 +153,7 @@ export const Skills = () => {
 
           <Styles.TimeLinePoint>
             <Styles.TimelineTitleRoot>
-              <Styles.TimelineTitle>Nandos 🐔</Styles.TimelineTitle>
+              <Styles.TimelineTitle>Nando's 🐔</Styles.TimelineTitle>
               <Styles.TimelineText>2013 - 2015</Styles.TimelineText>
             </Styles.TimelineTitleRoot>
             <Styles.TimelineBodyRoot>
